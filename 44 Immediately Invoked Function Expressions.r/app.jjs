@@ -1,0 +1,20 @@
+
+// Reminder: Function statements are fully named.
+function greetFS(name) {
+	console.log('Function Statement Hello, ' + name);
+}
+
+// Reminder: Function expressions are anonymous.
+var greetFE = function(name) {
+	console.log('Function Expression Hello, ' + name);
+}
+
+// When the JIT compiler makes it's first pass in the code it will run this.
+var greetIIFE =  function(name) {
+	console.log('Immediately Invoked Function Expression Hello, ' + name);
+}('Jon');
+
+// These get run in the JIT's second pass.
+greetFS('Jon');
+greetFE('Jon');
+
