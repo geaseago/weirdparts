@@ -1,5 +1,5 @@
-// Instead of creating a greet function, let's make a factory.
-//
+// Instead of creating a greet function, let's make a factory
+//   to produce functions that greet.
 //
 function makeGreeting(language) {
   return function(firstname, lastname) {
